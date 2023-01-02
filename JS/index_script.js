@@ -8,20 +8,14 @@ let carousel = document.querySelector('.carousel');
 // 네비바 클릭 함수
 navToggle.addEventListener('click',function(){
     listGShow.classList.toggle('show');
-    listGShow.style.display = ((document.querySelector('.list-group').style.display!='none') ? 'none' : 'block');
+    listGShow.style.display = ((listGShow.style.display!='none') ? 'none' : 'block');
 });
 
 document.querySelector('.btn1').addEventListener('click', function(){
     carousel.style.transform = 'translateX(0)';
-    document.querySelector('.btn1').style.background ='#263238';
-    document.querySelector('.btn2').style.background ='white';
-    document.querySelector('.btn3').style.background ='white';
 });
 document.querySelector('.btn2').addEventListener('click', function(){
     carousel.style.transform = 'translateX(-100vw)';
-    document.querySelector('.btn2').style.background ='#263238';
-    document.querySelector('.btn1').style.background ='white';
-    document.querySelector('.btn3').style.background ='white';
 });
 document.querySelector('.btn3').addEventListener('click', function(){
     carousel.style.transform = 'translateX(-200vw)';

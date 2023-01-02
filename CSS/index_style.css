@@ -11,6 +11,9 @@ header{
     top: 0;
     z-index: 5;
 }
+.navbar{
+    padding: 10px 60px;
+}
 a{
     text-decoration: none;
     color: gray;
@@ -45,6 +48,7 @@ a{
     float: right;
     font-size: 15px;
     color: gray;
+    margin-right: 40px;
 }
 
 .login_var a{
@@ -58,10 +62,9 @@ a{
 .wrapper{
     overflow: hidden;
     height: 90vh;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 } 
 .carousel{
-    /* position: absolute; */
     width: 300vw;
     transition: all 1s;
     height: 100%;
@@ -81,40 +84,36 @@ a{
     top: 95%;
     left: 50%;
     transform: translateX(-50%);
+    border: none;
 }
-.box-btn button{
-    margin: 10px;
-    width: 15px;
-    height: 15px;
-    border-radius: 100px;
-} 
-.btn1{
-    background: #263238;
-}
+
+
 /* 상품 카드-grid설정 */
 .container-card{
-    border: 1px solid blue;
-    /* width: auto; */
-    /* height: 80vh; */
+    /* border: 1px solid blue;  */
+    margin-top: 10px;
     padding-left: 150px;
     display: grid;
-    gap: 20px 30px;
+    gap: 30px 30px;
     grid-template-columns: repeat(4, 300px);
     grid-auto-rows: auto;
-    overflow: auto;
+    height: 40%
 }
 .container-card span{
     grid-column: 1 / 5;
     font-size: 80px;
     text-align: center;
+    margin-bottom: 30px;
 }
 .container-card div{
-    margin-top: 30px;
-    /* border: 1px solid red; */
+    /* margin-top: 30px; */
     background: white;
     box-shadow: 1px 1px 5px gray;
+    overflow: auto;
 }
 .container-card div p{
+    /* border: 1px solid seagreen; */
+    margin: 10px;
     margin-left: 10px;
 }
 .list-name{
@@ -127,7 +126,7 @@ footer{
     /* border: 1px solid red; */
     height: 30vh;
     background: black;
-    color: whitesmoke;
+    color: gray;
     margin-top: 30px;
     position: relative;
 }
