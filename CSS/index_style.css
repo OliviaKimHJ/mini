@@ -9,6 +9,7 @@
 header{
     position: sticky;
     top: 0;
+    z-index: 5;
 }
 a{
     text-decoration: none;
@@ -79,6 +80,7 @@ a{
     position: absolute;
     top: 95%;
     left: 50%;
+    transform: translateX(-50%);
 }
 .box-btn button{
     margin: 10px;
@@ -91,8 +93,8 @@ a{
 }
 /* 상품 카드-grid설정 */
 .container-card{
-    /* border: 1px solid red; */
-    width: auto;
+    border: 1px solid blue;
+    /* width: auto; */
     /* height: 80vh; */
     padding-left: 150px;
     display: grid;
