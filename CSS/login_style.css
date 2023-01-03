@@ -1,0 +1,73 @@
+/* 로그인페이지 왼쪽 */
+.container-login{
+  /* border: 2px solid red; */
+  overflow: auto;
+  margin-top: 30px;
+  font-family: 'twayair';
+}
+.login-left{
+  float: left;
+}
+.login-left img{
+  width: 800px;
+}
+
+.login-right{
+  /* border: 1px solid black; */
+  float: right;
+  text-align: center;
+  box-sizing: border-box;
+  width: 600px;
+  /* 위치 옮기기 */
+  margin-top: 100px;
+  margin-right: 80px;
+}
+.login-right h2{
+  margin-bottom: 60px;
+}
+.idpw input{
+  /* border: 1px solid violet; */
+  width: 80%;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border: 1px solid  rgb(160, 161, 157);
+  font-size: 20px;
+}
+
+.idpw input[type=password]{
+  font-family: none;
+}
+::placeholder {
+  font-family: 'twayair';
+}
+.chk{
+  width: 80%;
+  margin-top: 5px;
+  margin-left: 60px;
+  text-align: left;
+  font-size: 15px;
+}
+
+.login-btn input{
+  margin-top: 30px;
+  font-size: 20px;
+  width:  80%;
+  background: black;
+  color: rgb(206, 207, 203);
+}
+
+.find-idpw{
+  margin-top: 30px;
+}
+
+.find-idpw a{
+  margin: 0 10px;
+}
+
+@font-face {
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

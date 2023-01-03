@@ -1,22 +1,40 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: KyoboHandwriting2021sjy;
+}
+
+/* 브랜드 명 */
+#brand-name{
+    /* border: 1px solid teal; */
+    border-bottom: 2px solid  black;
+    margin: 30px;
+    text-align: center;
+    font-size: 80px;
+    font-family: 'Passions Conflict', cursive;
+}
+#brand-name img{
+    margin-left: 10px;
+    width: 50px;
+    margin-bottom: 20px;
 }
 /* nav 바 */
 header{
+    /* border: 1px solid red; */
     position: sticky;
     top: 0;
     z-index: 5;
+    font-family: 'twayair';
 }
 .navbar{
     padding: 10px 60px;
 }
 a{
     text-decoration: none;
-    color: gray;
+    color: rgb(160, 161, 157);
     /* border: 1px solid red; */
 }
 .list-group{
@@ -31,6 +49,7 @@ a{
     height: 50px;
     background: white;
     border-radius: 10px;
+    margin-left: 30px;
 }
 .list_nav{
     /* border: 1px solid blue; */
@@ -38,22 +57,34 @@ a{
     display: flex;
 }
 .list_nav div{
+    /* border: 1px solid red; */
     margin-right: 90px;
     text-align: center;
     line-height: 50px;
     font-size: 30px;
 }
 .login_var{
-    display: flex;
+    /* display: flex; */
+    /* display: none; */
     float: right;
     font-size: 15px;
-    color: gray;
+    color: rgb(160, 161, 157);
     margin-right: 40px;
 }
-
+@media (max-width:1200px){
+    .login_var{
+        display: none;
+    }
+    .list_nav div{
+        font-size: 15px;
+        width: 30%;
+    }
+}
 .login_var a{
     margin-right: 10px;
 }
+/* 반응형 */
+
 .login_var a:last-child{
     margin-left: 10px;
 }
@@ -79,31 +110,43 @@ a{
 .box img{
     width: 100%;
 }
-.box-btn{
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translateX(-50%);
+.previous, .next{
     border: none;
+    background-color:transparent;
+}
+
+.previous{
+    position: absolute;
+    top : 80%;
+    transform: translateY(-50%);
+}
+
+.next{
+    position: absolute;
+    right: 0;
+    top : 80%;
+    transform: translateY(-50%);
 }
 
 
 /* 상품 카드-grid설정 */
-.container-card{
+.card-list{
     /* border: 1px solid blue;  */
-    margin-top: 10px;
-    padding-left: 150px;
+    margin-top: 30px;
+    text-align: center;
+    font-family: 'twayair';
+}
+
+.card-list span{
+    font-size: 70px;
+}
+.container-card{
+    margin-top: 20px;
+    margin-left: 150px;
     display: grid;
     gap: 30px 30px;
-    grid-template-columns: repeat(4, 300px);
-    grid-auto-rows: auto;
-    height: 40%
-}
-.container-card span{
-    grid-column: 1 / 5;
-    font-size: 80px;
-    text-align: center;
-    margin-bottom: 30px;
+    grid-template-columns: repeat(auto-fit, 300px);
+    text-align: start;
 }
 .container-card div{
     /* margin-top: 30px; */
@@ -126,14 +169,15 @@ footer{
     /* border: 1px solid red; */
     height: 30vh;
     background: black;
-    color: gray;
-    margin-top: 30px;
+    color: rgb(160, 161, 157);
+    margin-top: 50px;
     position: relative;
+    font-family: 'twayair';
 }
 .footer-left{
   float: left;
   padding: 20px;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 .footer-left span{
@@ -154,10 +198,11 @@ footer{
 .footer-right ul{
     list-style-type: none;
 }
-/*import할것들 */
+
+/*font */
 @font-face {
-    font-family: 'KyoboHandwriting2021sjy';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KyoboHandwriting2021sjy.woff2') format('woff2');
+    font-family: 'twayair';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

@@ -10,16 +10,27 @@ navToggle.addEventListener('click',function(){
     listGShow.classList.toggle('show');
     listGShow.style.display = ((listGShow.style.display!='none') ? 'none' : 'block');
 });
-
+/*
 document.querySelector('.btn1').addEventListener('click', function(){
     carousel.style.transform = 'translateX(0)';
 });
 document.querySelector('.btn2').addEventListener('click', function(){
     carousel.style.transform = 'translateX(-100vw)';
 });
-document.querySelector('.btn3').addEventListener('click', function(){
-    carousel.style.transform = 'translateX(-200vw)';
-    document.querySelector('.btn3').style.background ='#263238';
-    document.querySelector('.btn1').style.background ='white';
-    document.querySelector('.btn2').style.background ='white';
+*/
+$('.next').on('click', function(){
+    if(no < 3 ){
+        carousel.style.transform = `translateX(-${no}00vw)`;
+        no++;
+        console.log(no);
+    }
+});
+
+
+$('.previous').on('click', function(){
+        if(no > 1){
+        carousel.style.transform = `translateX(-${no-2}00vw)`;
+        no--;
+        console.log(no);
+    }
 });

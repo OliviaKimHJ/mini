@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="shortcut icon" href="img/owl.png" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/index_style.css">
+  <link rel="stylesheet" href="CSS/sign-up_style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="list_nav">
+                <div class="logimg"> <a href="index.html"><img src="img/owl.png"></a></div>
+                <div> <a href="#"> 스티커 </a></div>
+                <div> <a href="#"> 배경지 </a></div>
+                <div> <a href="#"> 기타소품 </a></div>
+            </div>
+            <div class="login_var">
+                <a href="login.html">로그인</a>| 
+                <a href="sign-up.html">회원가입</a>
+            </div>
+        </div>
+        <ul class="list-group">
+            <li class="list-group-item">스티커</li>
+            <li class="list-group-item">배경지</li>
+            <li class="list-group-item">기타 소품</li>
+          </ul>
+        </nav>
+</header>
+
+<!-- 회원가입 폼 -->
+<div class="container-signup">
+  <div id="signup_form"> 
+    <h2>회원가입</h2>
+    <form>
+      <div class="id_input_box">
+        <span>아이디</span>
+        <input id="id_txt" type="text" placeholder=" 영문 소문자/숫자 조합, 4~16">
+        <p class="id_input_check"></p>
+      </div>
+
+      <div class="pw_input_box">
+        <span>비밀번호</span>
+        <input id="pw_txt" type="password" placeholder=" 대소문자/숫자/특수문장 2가지 이상, 8~16자">
+        <p class="pw_input_check"></p>
+      </div>
+    
+      <div class="pw_input_box">
+        <sapn>비밀번호 확인</sapn>
+        <input id="re_pw_txt" type="password" placeholder=" 비밀번호를 한 번 더 확인하세요.">
+        <p class="pw_input_recheck"></p>
+      </div>
+
+      <div class="name_input_box">
+        <span>이름</span>
+        <input id="name_txt" type="text" placeholder=" 이름을 입력하세요.">
+        <p class="name_input_check"></p>
+      </div>
+
+      <div class="phone_input_box">
+        <span>휴대폰</span>
+        <input id="phone_txt" type="text" placeholder=" -포함 숫자만 입력하세요.">
+        <p class="phone_input_check"></p>
+      </div>
+      
+      <div class="email_input_box">
+        <span>이메일</span>
+        <input id="email_txt" type="text" placeholder=" 이메일을 입력하세요.">
+        <p class="email_input_check"></p>
+      </div>
+      
+      <div class="email_input_box">
+        <span>생년월일</span>
+        <input id="ymd_txt" type="text" placeholder=" 예:19991011">
+        <p class="ymd_input_check"></p>
+      </div>
+    </form>
+    </div>
+
+    <!-- 약관 동의 체크박스 -->
+    <div class="terms">
+        <h3>약관동의</h3>
+        <div class="terms_check">
+          <form>
+            <div class="all_check">
+              <input id="all" type="checkbox">
+                <label for="all">전체 동의 합니다</label>
+            </div>
+            <div class="service_check">
+              <input id="agree_service_check" type="checkbox">
+              <label for="agree_service_check">이용약관의 동의<span> (필수)</span></label>
+            </div>
+            <div class="privacy_check">
+              <input id="agree_privacy_check" type="checkbox">
+              <label for="agree_privacy_check">개인정보 수집 및 이용동의<span> (필수)</span></label>
+            </div>
+            <div class="marketing_check">
+              <input id="agree_marketing_check" type="checkbox">
+              <label for="agree_marketing_check">마케팅 수신 동의<span> (선택)</span></label>
+            </div>
+          </form>
+        </div>
+    </div><!--terms -->
+
+    <!-- 가입버튼 -->
+    <div class="signupBtn">
+      <a href="#none" id="join_btn">가입하기</a>
+    </div>
+</div> <!-- container-signup -->
+
+    <!-- 하단 -->
+    <footer>
+      <div class="footer-left">
+        <span>Vintage Mall</span> <br>
+        <span>서울시 강남대로</span> <br>
+        <span>사업자등록번호 111-12-09876 사업자정보확인 12345</span> <br>
+        <span>대표이사 Olivia</span>
+      </div>
+
+      <div class="footer-right">
+        <ul>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">공지사항</a></li>
+        </ul>
+      </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
+<script src="JS/sign-up_script.js"></script>
+</body>
+</html>
