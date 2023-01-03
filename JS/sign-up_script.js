@@ -27,7 +27,8 @@ $('#id_txt').on('keypress', function(e){
   if(e.code == 'Enter'){
     let val = $('#id_txt').val();
     isId = regexId.test(val);
-   
+    
+    console.log(isId);
     showMsg('아이디', isId, idCheck);
   }
 });
@@ -102,5 +103,21 @@ function showMsg(name, isX, xCheck){
   }else{
     xCheck.html(`사용 불가능한 ${name}입니다.`);
     xCheck.css('color', 'red');
+
+    submit();
   }
 }
+$('#all').on('click', function(){
+  let checkList = $('#all').prop('checked');
+  if(checkList){
+    $('input:checkbox').prop('checked', true);
+  }
+});
+
+function submit(){
+  if((isId&&isPw&&isEmail&&isPhone&&isName&&isYmd) === true){
+    $('.signupBtn').css('background', 'black');
+  }
+}
+/* 체크박스 */
+
