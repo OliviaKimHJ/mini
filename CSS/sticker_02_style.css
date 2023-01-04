@@ -1,6 +1,6 @@
 /* left화면구성 */
 #sticker-container{
-  padding-top: 100px;
+  padding: 100px 0;
   display: flex;
   border: 1px solid violet;
 }
@@ -11,6 +11,7 @@
   display: flex;
   overflow: hidden;
   margin: auto;
+  position: relative;
 }
 .best::before{
   position: absolute;
@@ -19,27 +20,27 @@
   color: white;
   padding: 3px;
 }
+
 .sticker-previous, .sticker-next{
   border: none;
+  position: absolute; 
   background-color:transparent;
 }
 
 .sticker-previous{
-  position: absolute;
-  top: 70%;
-  left: 20px;
-  top:  70%;
+  top: 50%;
   transform: translateY(-50%);
 }
 
 .sticker-next{
-  position: absolute;
-  top: 70%;
-  left: 61%;
-  top:  70%;
+  top: 50%;
+  right: 0;
   transform: translateY(-50%);
 }
-.view{
+
+/*  오른쪽 상품 설명+구매하기 */
+#right-view{
   border: 1px solid tomato;
+  width: 800px;
   margin: auto;
 }
