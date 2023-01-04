@@ -4,15 +4,15 @@
   box-sizing: border-box;
   font-family: 'twayair';
 }
-.container-signup{
-  width: 40vw;
-  margin: auto;
-}
 
+.container-signup{
+  margin: auto;
+  width: 30vw;
+}
 h2{
   text-align: center;
   /* border: 1px solid blue; */
-  margin-top: 30px;
+  margin-top: 100px;
   margin-bottom: 40px;
 }
 
@@ -63,7 +63,7 @@ h2{
   padding: 10px;
   border-radius: 5px;
 }
-.signupBtn a{
+#join_btn{
   color: white;
 }
 @font-face {

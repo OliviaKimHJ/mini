@@ -1,0 +1,40 @@
+section{
+  font-family: 'twayair';
+}
+.sticker-title{
+  margin-top: 30px;
+  text-align: center;
+  font-size: 60px;
+}
+#sticker-list-card{
+  /* border: 1px solid red; */
+  display: grid;
+  gap: 30px 30px;
+  grid-template-columns: repeat(4, 300px);
+  padding: 30px 140px;
+}
+#sticker-list-card img{
+  width: 300px;
+}
+
+.Slist-card{
+  background: white;
+  box-shadow: 1px 1px 5px gray;
+  overflow: hidden;
+}
+/* 상품명 */
+.name{
+ /* border: 1px solid red; */
+ font-size: 25px;
+ color: black;
+}
+.money{
+  color: black;
+}
+/*font */
+@font-face {
+  font-family: 'twayair';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_tway@1.0/twayair.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

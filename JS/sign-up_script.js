@@ -8,6 +8,7 @@ const regexYmd = /^\d{8}/;
 /* 입력했는지 알 수 있는 변수들 */
 let isId = false;
 let isPw = false;
+let isRPW = false;
 let isName = false;
 let isEmail = false;
 let isPhone = false;
@@ -53,6 +54,7 @@ $('#re_pw_txt').on('keypress', function(e){
       $('.pw_input_recheck').html('잘못입력하셨습니다.');
       $('.pw_input_recheck').css('color', 'red');
     }else{
+      isRPW =true;
       $('.pw_input_recheck').html('비밀번호가 일치합니다.');
       $('.pw_input_recheck').css('color', 'blue');
     }
@@ -103,20 +105,26 @@ function showMsg(name, isX, xCheck){
   }else{
     xCheck.html(`사용 불가능한 ${name}입니다.`);
     xCheck.css('color', 'red');
-
-    submit();
   }
+  
+  submit();
 }
 $('#all').on('click', function(){
   let checkList = $('#all').prop('checked');
   if(checkList){
     $('input:checkbox').prop('checked', true);
   }
+  submit();
 });
-
+// isId&&isPw&&isRPW&&isName&&isPhone&&isEmail&&isYmd
 function submit(){
-  if((isId&&isPw&&isEmail&&isPhone&&isName&&isYmd) === true){
-    $('.signupBtn').css('background', 'black');
+  if((isId&&isPw&&isRPW&&isName&&isPhone&&isEmail&&isYmd)===true){
+    if($('input:checkbox').prop('checked')){
+      // console.log($('input:checkbox').prop('checked'));
+      $('.signupBtn').css('background', 'black');
+    }
+  }else{
+    $('.signupBtn').css('background', 'rgb(160, 161, 157)');
   }
 }
 /* 체크박스 */
