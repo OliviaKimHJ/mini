@@ -1,0 +1,45 @@
+/* left화면구성 */
+#sticker-container{
+  padding-top: 100px;
+  display: flex;
+  border: 1px solid violet;
+}
+#left-carousel{
+  border: 1px solid red;
+  width: 510px;
+  height: 508px;
+  display: flex;
+  overflow: hidden;
+  margin: auto;
+}
+.best::before{
+  position: absolute;
+  content: 'BEST';
+  background: pink;
+  color: white;
+  padding: 3px;
+}
+.sticker-previous, .sticker-next{
+  border: none;
+  background-color:transparent;
+}
+
+.sticker-previous{
+  position: absolute;
+  top: 70%;
+  left: 20px;
+  top:  70%;
+  transform: translateY(-50%);
+}
+
+.sticker-next{
+  position: absolute;
+  top: 70%;
+  left: 61%;
+  top:  70%;
+  transform: translateY(-50%);
+}
+.view{
+  border: 1px solid tomato;
+  margin: auto;
+}

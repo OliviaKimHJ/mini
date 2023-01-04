@@ -15,12 +15,20 @@ section{
 }
 #sticker-list-card img{
   width: 300px;
+  height: 340px;
 }
-
 .Slist-card{
   background: white;
   box-shadow: 1px 1px 5px gray;
   overflow: hidden;
+}
+
+.best::before{
+  content: 'BEST';
+  background: palevioletred;
+  color: white;
+  position: absolute;
+  padding: 3px;
 }
 /* 상품명 */
 .name{
