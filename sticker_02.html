@@ -9,6 +9,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
   <link rel="stylesheet" href="CSS/index_style.css">
   <link rel="stylesheet" href="CSS/sticker_02_style.css">
+  <script src="https://kit.fontawesome.com/49d6f93b8f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <!-- 네비 -->
@@ -50,37 +51,57 @@
         <div class="img-box">
           <img src="img/flower02.jpg">
         </div>
-        <div class="img-box-btn">
-          <button class="sticker-previous"><img src="img/white-leftarrow.png"></button>
-          <button class="sticker-next"><img src="img/white-rightarrow.png"></button>
-        </div>
       </div> 
+      <div class="img-box-btn">
+        <button class="sticker-previous"><img src="img/white-leftarrow.png"></button>
+        <button class="sticker-next"><img src="img/white-rightarrow.png"></button>
+      </div>
     </div> <!--left-carousel -->
     
     <!-- 정보 -->
     <div id="right-view">
       <h1>빈티지 플라워 조각 스티커 50매</h1>
-      <div><h4><strong>3,500</strong>원</h4></div>
-      <div class="제품설명">
+      <div class="price1"><strong>1,500</strong>원</div>
+      <div class="content">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, tenetur omnis
       </div>
       <div class="view-box">
-        <div class="price"><span>가격</span><span>1,500원</span></div>
-        <div class="listCnt"><span>수량</span>
+        <div class="price2"><span>&emsp;가격</span><span>1,500원</span></div>
+        <div class="stiker-kind">
+          <select name = "kinds">
+            <option value="set" selected>종류</option>
+            <option value="1"> 빈티지플라워</option>
+            <option value="2"> 나비</option>
+            <option value="3"> 나뭇잎</option>
+          </select>
+         </div>
+        <div class="listCnt"><span>&emsp;수량</span>
           <form>
-            <input type="button" value="-">
-            <input type="text" value="1">
-            <input type="button" value="+">
+            <input class="minus" type="button" value="-">
+            <input name="quantity" type="text" value="1">
+            <input class="plus" type="button" value="+">
           </form>
         </div>
-        <a href="#none"><div class="cart-btn">장바구니</div></a>
+      </div>
+      <div class="cart-like"></div>
+      <div class="cpBtn">
         <a href="#none"><div class="past-btn">바로구매</div></a>
+        <a href="#none"><div class="cart-btn">장바구니</div></a>
       </div>
     </div>
   </div><!--sticker-container-->
+  
+  <!-- 상품 설명 이미지 -->
+  <div id="sticker-main-imgbox">
+    <div class="main-sticker">
+      <img src="img/flower-main.jpg">
+    </div>
+  </div>
 </section>
 
-
+<div class="up">
+  <a href="#"><i class="fa-solid fa-arrow-up"></i></a>
+</div>
 <!-- 하단 -->
 <footer>
   <div class="footer-left">
@@ -101,5 +122,6 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
 <script src="JS/index_script.js"></script>
+<script src="JS/sticker_02_script.js"></script>
 </body>
 </html>

@@ -1,26 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* 브랜드 명 */
-#brand-name{
-    /* border: 1px solid teal; */
-    border-bottom: 2px solid  black;
-    margin: 30px;
-    text-align: center;
-    font-size: 80px;
-    font-family: 'Passions Conflict', cursive;
-}
-#brand-name img{
-    margin-left: 10px;
-    width: 50px;
-    margin-bottom: 20px;
-}
 /* nav 바 */
 header{
     /* border: 1px solid red; */
@@ -36,6 +22,15 @@ a{
     text-decoration: none;
     color: rgb(160, 161, 157);
     /* border: 1px solid red; */
+}
+
+/* 브랜드 명 */
+.logimg span{
+    vertical-align: bottom;
+    padding-right: 5px;
+    font-family:'Passions Conflict';
+    font-size: 20px;
+    font-family: 'Dancing Script';
 }
 .logimg img{
     width: 50px;
@@ -86,7 +81,7 @@ a{
 .wrapper{
     overflow: hidden;
     height: 90vh;
-    /* border: 1px solid red; */
+    position: relative;
 } 
 .carousel{
     width: 300vw;
@@ -110,14 +105,14 @@ a{
 
 .previous{
     position: absolute;
-    top : 80%;
+    top : 50%;
     transform: translateY(-50%);
 }
 
 .next{
     position: absolute;
     right: 0;
-    top : 80%;
+    top : 50%;
     transform: translateY(-50%);
 }
 
@@ -125,20 +120,31 @@ a{
 /* 상품 카드-grid설정 */
 .card-list{
     /* border: 1px solid blue;  */
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: center;
     font-family: 'twayair';
 }
 
-.card-list span{
+.card-list p:first-child{
     font-size: 70px;
+    margin-bottom: 50px;
+}
+.card-img{
+    width: 100%;
+    height: 350px;
+}
+.best::before{
+    position: absolute;
+    content: "BSET";
+    background: pink;
+    color: white;
+    padding: 3px;
 }
 .container-card{
-    margin-top: 20px;
-    margin-left: 150px;
+    margin-left: 45px;
     display: grid;
     gap: 30px 30px;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, 350px);
     text-align: start;
 }
 .container-card div{
@@ -152,6 +158,7 @@ a{
     margin: 10px;
     margin-left: 10px;
 }
+
 .list-name{
     color: black;
     font-size: 30px;
@@ -191,6 +198,14 @@ footer{
 }
 .footer-right ul{
     list-style-type: none;
+}
+
+.up{
+    width: 40px;
+    position: sticky;
+    left: 100vw;
+    bottom: 0;
+    font-size: 40px;
 }
 
 /*font */
