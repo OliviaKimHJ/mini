@@ -80,37 +80,40 @@ a{
 /* index-main container */
 .wrapper{
     overflow: hidden;
-    height: 90vh;
     position: relative;
 } 
 .carousel{
     width: 300vw;
     transition: all 1s;
-    height: 100%;
-  }
+}
 
 .box{
     width: 100vw;
-    height: 100%;
     float: left;
 }
-  
+
 .box img{
     width: 100%;
 }
 .previous, .next{
     border: none;
     background-color:transparent;
+    position: absolute;
+}
+.previous img{
+    width: 5vw;
 }
 
+.next img{
+    width: 5vw;
+}
 .previous{
-    position: absolute;
+    left: 0;
     top : 50%;
     transform: translateY(-50%);
 }
 
 .next{
-    position: absolute;
     right: 0;
     top : 50%;
     transform: translateY(-50%);
@@ -167,7 +170,7 @@ a{
 /* footer */
 footer{
     /* border: 1px solid red; */
-    height: 30vh;
+    height: 200px;
     background: black;
     color: rgb(160, 161, 157);
     margin-top: 50px;

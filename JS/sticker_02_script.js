@@ -19,7 +19,8 @@ $('.sticker-previous').on('click', function(){
  let quantity; 
  let Nquantity; 
  let cartLike = $('.cart-like');
- 
+ let arr =[];
+
  $('.minus').on('click',function(){
   quantity = $('input[name=quantity]').val();
   Nquantity =Number(quantity);
@@ -39,10 +40,69 @@ $('.sticker-previous').on('click', function(){
     }
   });
   
-
+// 내가 선택한 값들 보여주는 코드
+/*
 $("select[name=kinds]").on('click', function(){
   quantity = $('input[name=quantity]').val();
   let listname = $("select[name=kinds] option:selected").text();
   cartLike.css('display', 'block');
   cartLike.html(`${listname} 개수 : ${quantity}`);
+});
+*/
+
+
+
+function printList(newlist){
+  cartLike.css('display', 'block');
+ 
+  const li = document.createElement('li');
+  const span = document.createElement('span');
+  li.append(span);
+  span.innerHTML = `${newlist.name} 개수 :${newlist.cnt} `;
+  li.id = newlist.name;
+  const delBtn = document.createElement('button');
+  delBtn.innerHTML='X';
+  li.append(delBtn);
+
+  $('#cart-list').append(li);
+
+  delBtn.addEventListener('click', deleltList);
+
+}
+
+
+function deleltList(e){
+  let pn = e.target.parentElement;
+  arr = arr.filter((list) => list.name !== pn.id);
+  saveProduct();
+  pn.remove();
+}
+
+function saveProduct(){
+  localStorage.setItem('listName', JSON.stringify(arr));
+}
+
+let getList = localStorage.getItem('listName');
+
+if(getList !== null){
+  let parseList = JSON.parse(getList);
+  arr = parseList;
+  parseList.forEach((data) => {printList(data); });
+}
+
+$('.past-btn').on('click', function(e){
+  e.preventDefault();
+  if($('select[name=kinds] option:selected').val() != 'set'){
+    quantity = $('input[name=quantity]').val();
+    let listname = $("select[name=kinds] option:selected").text();
+    let obj ={
+      // key : Date.now(),
+      name : listname,
+      cnt : quantity,
+    };
+
+    arr.push(obj);
+    saveProduct(); //arr 저장하지마 로컬에 저장해주는 함수
+    printList(obj); // Ul안에 list보여주는 함수
+}
 });

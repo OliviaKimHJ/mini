@@ -44,6 +44,10 @@ h2{
   margin-bottom: 5px;
 }
 
+.agree_view{
+  font-size: 12px;
+  float: right;
+}
 .service_check span{
   color: red;
 }
