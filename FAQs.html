@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>로그인</title>
+  <title>FAQs</title>
   <link rel="shortcut icon" href="img/owl.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="CSS/login_style.css">
   <link rel="stylesheet" href="CSS/index_style.css">
+  <link rel="stylesheet" href="CSS/FAQs.css">
 </head>
 <body>
-  <!-- nav 바 -->
+  <!-- 네비 -->
   <header>
     <nav class="navbar navbar-dark bg-dark">
         <div class="container-fluid">
@@ -30,55 +30,67 @@
             </div>
         </div>
         <ul class="list-group">
-          <li class="list-group-item"><a href="sticker_main.html">스티커</a></li>
-          <li class="list-group-item"><a href="">배경지</a></li>
-          <li class="list-group-item"><a href="">기타 소품</a></li>
+            <li class="list-group-item"><a href="sticker_main.html">스티커</a></li>
+            <li class="list-group-item"><a href="">배경지</a></li>
+            <li class="list-group-item"><a href="">기타 소품</a></li>
           </ul>
         </nav>
 </header>
-  
-  <!-- 로그인 폼 -->
-  <div class="container-login">
-    <div class="login-left">
-      <img src="img/vintage-login.jpg">
-    </div>
-    <div class="login-right">
-      <div>
-        <h2>LOGIN</h2>
-      </div>
-      <div class="login-form">
-        <form>
-          <div class="idpw">
-            <input type="text" name="id" placeholder="아이디" required>
-            <input type="password" name ="pw" placeholder="비밀번호" required>
-          </div>
-          <div class="chk">
-            <input type="checkbox" name ="state" id="state">
-            <label for="state"> 아이디 저장</label>
-          </div>
-          <div class="login-btn">
-            <input class="login-submit" type="submit" value="로그인">
-          </div>
-        </form>
+  <div id="board-list">
+    <div class="container">
+      <h1>공지사항</h1>
+        <table class="board-table">
+            <thead>
+            <tr>
+                <th scope="col" class="th-num">번호</th>
+                <th scope="col" class="th-title">제목</th>
+                <th scope="col" class="th-date">등록일</th>
+            </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>4</td>
+                <th>
+                  <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
+                  <p>테스트</p>
+                </th>
+                <td>2023.01.06</td>
+            </tr>
 
-        <div class="find-idpw">
-          <a href="">아이디 찾기</a> |
-          <a href="">비밀번호 찾기</a> |
-          <a href="sign-up.html">일반회원가입</a> 
-        </div>
-      </div>
-    </div>
-  </div>
+            <tr>
+                <td>3</td>
+                <th>
+                  <a href="#!">[공지사항] 개인정보 처리방침 변경안내처리방침</a>
+                  <p>테스트</p>
+                </th>
+                <td>2023.01.06</td>
+            </tr>
 
-  <!-- 하단 -->
+            <tr>
+                <td>2</td>
+                <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                <td>2023.01.06</td>
+            </tr>
+
+            <tr>
+                <td>1</td>
+                <th><a href="#!">공지사항 안내입니다. 이용해주셔서 감사합니다</a></th>
+                <td>2023.01.05</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
   <footer>
     <div class="footer-left">
-      <span>Vintage Mall</span> <br>
+      <span>Vintage OWL</span> <br>
       <span>서울시 강남대로</span> <br>
       <span>사업자등록번호 111-12-09876 사업자정보확인 12345</span> <br>
       <span>대표이사 Olivia</span>
     </div>
-
+  
     <div class="footer-right">
       <ul>
         <li><a href="FAQs.html">FAQs</a></li>
@@ -86,7 +98,7 @@
       </ul>
     </div>
   </footer>
-
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.2.min.js" integrity="sha256-2krYZKh//PcchRtd+H+VyyQoZ/e3EcrkxhM8ycwASPA=" crossorigin="anonymous"></script>
   <script src="JS/index_script.js"></script>
