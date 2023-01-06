@@ -21,6 +21,7 @@ h2{
   width: 100%;
   height: 35px;
   margin-bottom: 10px;
+  padding-left: 10px;
 }
 .pw_input_box input[type=password]{
   font-family: none;
